@@ -75,7 +75,7 @@ export function Navigation() {
           items={items}
         />
       </Col>
-      <Col>
+{/*       <Col>
         <Row gutter={16} wrap={false}>
           <Col xs={0} sm={0} md={18}>
             <a
@@ -87,7 +87,7 @@ export function Navigation() {
                 alt='chat on Discord'
               />
             </a>
-          </Col>
+          </Col> */}
           <Col>
             <a
               href='https://github.com/rockbenben/img-prompt'
