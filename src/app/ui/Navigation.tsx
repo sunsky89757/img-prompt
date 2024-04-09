@@ -79,12 +79,12 @@ export function Navigation() {
         <Row gutter={16} wrap={false}>
           <Col xs={0} sm={0} md={18}>
             <a
-              href='https://discord.gg/PZTQfJ4GjX'
+              href='https://www.gptacg.com'
               target='_blank'
               rel='noopener noreferrer'>
               <img
-                src='https://www.gptacg.com'
-                alt='chat on Discord'
+                src='https://img.shields.io/discord/1048780149899939881?color=%2385c8c8&label=Discord&logo=discord&style=for-the-badge'
+                alt='Enjoy on Danke'
               />
             </a>
           </Col>
