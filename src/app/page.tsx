@@ -71,7 +71,7 @@ const Home: FC = () => {
           justifyContent: "center",
           alignItems: "center",
         }}>
-        IMGPrompt
+        蛋壳IMGPrompt
       </Title>
       <Row gutter={[16, 16]}>
         <Col xs={24} lg={18}>
