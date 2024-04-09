@@ -7,10 +7,10 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import { AntdRegistry } from "@ant-design/nextjs-registry";
 
 export const metadata: Metadata = {
-  title: "IMGPrompt - Stable Diffusion 和 Midjourney 的图像提示词生成工具",
+  title: "蛋壳IMG Prompt - Midjourney 和其他绘图AI的图像提示词生成工具",
   description:
-    "IMGPrompt 是一个直观的图像提示词生成工具，可以方便地在 Stable Diffusion 和 Midjourney 的流程中使用，使图像提示词的创建变得简单而有效，轻松激发创意并获得更好的图片结果。通过 IMGPrompt，你可以将自己的创意想法转化为视觉现实。",
-  keywords: "IMGPrompt, Stable Diffusion, Midjourney, Image prompt generation, Visual creativity toolprompt, ai, prompt, 提示词",
+    "蛋壳IMGPrompt 是一个直观的图像提示词生成工具，可以方便地在 Stable Diffusion 和 Midjourney 的流程中使用，使图像提示词的创建变得简单而有效，轻松激发创意并获得更好的图片结果。通过 IMGPrompt，你可以将自己的创意想法转化为视觉现实。",
+  keywords: "DANKEIMGPrompt, Stable Diffusion, Midjourney, Image prompt generation, Visual creativity toolprompt, ai, prompt, 提示词",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
