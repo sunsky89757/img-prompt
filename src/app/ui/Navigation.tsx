@@ -75,7 +75,7 @@ export function Navigation() {
           items={items}
         />
       </Col>
-{/*       <Col>
+      <Col>
         <Row gutter={16} wrap={false}>
           <Col xs={0} sm={0} md={18}>
             <a
@@ -83,11 +83,11 @@ export function Navigation() {
               target='_blank'
               rel='noopener noreferrer'>
               <img
-                src='https://img.shields.io/discord/1048780149899939881?color=%2385c8c8&label=Discord&logo=discord&style=for-the-badge'
+                src='https://www.gptacg.com'
                 alt='chat on Discord'
               />
             </a>
-          </Col> */}
+          </Col>
           <Col>
             <a
               href='https://github.com/rockbenben/img-prompt'
