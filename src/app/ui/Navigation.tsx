@@ -22,10 +22,10 @@ const items: MenuProps["items"] = [
   {
     label: (
       <a
-        href='https://newzone.top/posts/2022-09-05-stable_diffusion_ai_painting.html'
+        href='https://vvip.gptacg.com/'
         target='_blank'
         rel='noopener noreferrer'>
-        Stable Diffusion 入门教程
+        ChatAI-In-One
       </a>
     ),
     key: "LearnData",
@@ -34,10 +34,10 @@ const items: MenuProps["items"] = [
   {
     label: (
       <a
-        href='https://www.aishort.top/'
+        href='https://dooy.gptacg.com'
         target='_blank'
         rel='noopener noreferrer'>
-        ChatGPT Shortcut
+        Dooy-AI
       </a>
     ),
     key: "aishort",
@@ -46,10 +46,10 @@ const items: MenuProps["items"] = [
   {
     label: (
       <a
-        href='https://tools.newzone.top/json-translate'
+        href='https://www.gptacg.com/'
         target='_blank'
         rel='noopener noreferrer'>
-        文本处理工具
+        蛋壳官网
       </a>
     ),
     key: "Tools",
