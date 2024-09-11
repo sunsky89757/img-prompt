@@ -1,17 +1,10 @@
 "use client";
 
-import React, { useState } from "react";
-import {
-  BgColorsOutlined,
-  ExperimentOutlined,
-  ThunderboltOutlined,
-  GithubOutlined,
-  ToolOutlined,
-} from "@ant-design/icons";
-import type { MenuProps } from "antd";
-import { Menu, Row, Col } from "antd";
+import React, { useState, useEffect } from "react";
+import { Menu, Row, Col, Space, Grid } from "antd";
 import { usePathname } from "next/navigation";
-import Link from "next/link";
+import { GithubOutlined } from "@ant-design/icons";
+import { MENU_ITEMS, DISCORD_LINK, GITHUB_LINK, DISCORD_BADGE_SRC } from "./data";
 
 const items: MenuProps["items"] = [
   {
@@ -22,7 +15,7 @@ const items: MenuProps["items"] = [
   {
     label: (
       <a
-        href='https://vvip.gptacg.com/'
+        href='https://nextchat.gptacg.com/'
         target='_blank'
         rel='noopener noreferrer'>
         ChatAI-In-One
@@ -60,20 +53,20 @@ const items: MenuProps["items"] = [
 export function Navigation() {
   const pathname = usePathname();
   const [current, setCurrent] = useState(pathname);
+  const screens = useBreakpoint();
 
-  const onClick: MenuProps["onClick"] = (e) => {
-    console.log("click ", e);
+  useEffect(() => {
+    setCurrent(pathname);
+  }, [pathname]);
+
+  const onClick = (e) => {
     setCurrent(e.key);
   };
+
   return (
-    <Row justify='space-between' align='middle' gutter={16}>
-      <Col xs={20} sm={18} md={16}>
-        <Menu
-          onClick={onClick}
-          selectedKeys={[current]}
-          mode='horizontal'
-          items={items}
-        />
+    <Row justify="space-between" align="middle" gutter={[16, 16]} wrap={false} style={{ backgroundColor: "#fff", padding: "0 24px" }}>
+      <Col flex="auto">
+        <Menu onClick={onClick} selectedKeys={[current]} mode="horizontal" items={MENU_ITEMS} />
       </Col>
       <Col>
         <Row gutter={16} wrap={false}>
@@ -87,17 +80,13 @@ export function Navigation() {
                 alt='Enjoy on Danke'
               />
             </a>
-          </Col>
-          <Col>
-            <a
-              href='https://github.com/rockbenben/img-prompt'
-              target='_blank'
-              rel='noopener noreferrer'
-              style={{ marginLeft: "10px" }}>
-              <GithubOutlined style={{ color: "black", fontSize: "24px" }} />
+          )}
+          {screens.md && (
+            <a href={GITHUB_LINK} target="_blank" rel="noopener noreferrer">
+              <GithubOutlined style={{ color: "black", fontSize: "24px", padding: "4px" }} />
             </a>
-          </Col>
-        </Row>
+          )}
+        </Space>
       </Col>
     </Row>
   );
